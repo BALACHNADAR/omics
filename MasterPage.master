@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Omics</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<form id="form1" runat="server">
+
+<%--<FONT style="position: absolute; top: 29px; left: 158px; width: 974px; height: 60px;" SIZE="6"
+                    FACE="Times new roman" COLOR=red><MARQUEE 
+        BEHAVIOR=SCROLL LOOP=6 scrollamount="14" 
+        style="height: 56px; width: 102%;">www.chennaisunday.com</MARQUEE></FONT>--%>
+        
+<div align="center">
+<div >
+    
+	<h1>SCRUTINIZING THE DISEASE BASED ON OMICS</h1>
+</div>
+<div id="menu" align="center">
+	<ul>
+		<li><a href="Home.aspx" accesskey="1" title="">Home</a></li>
+		<li><a href="Login.aspx" accesskey="2" title="">Admin Login</a></li>
+       <li><a href="ClientLogin.aspx" accesskey="2" title="">Client Login</a></li>
+		<li><a href="UserLogin.aspx" accesskey="3" title="">User Login</a></li>
+		<li><a href="Register.aspx" accesskey="4" title="">Register</a></li>
+		<%--<li><a href="#" accesskey="5" title="">About Us</a></li>--%>
+	</ul>
+</div>
+</div><hr />
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<!-- end content -->
+	<!-- start sidebar -->
+	<!-- end sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+        <asp:ContentPlaceHolder ID="materpage" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

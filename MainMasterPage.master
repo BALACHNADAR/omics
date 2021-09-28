@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Omics</title>
+    <meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <%--<FONT style="position: absolute; top: 29px; left: 158px; width: 974px; height: 60px;" SIZE="6"
+                    FACE="Times new roman" COLOR=blue><MARQUEE 
+        BEHAVIOR=SCROLL LOOP=6 scrollamount="14" 
+        style="height: 56px; width: 102%;">www.chennaisunday.com</MARQUEE></FONT>--%>
+        
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        <div >
+<div align="center">
+	<h1>SCRUTINIZING THE DISEASE BASED ON OMICS</h1>
+
+</div>
+<div id="menu">
+	<ul>
+		<li class="first"><a href="Home.aspx" accesskey="1" title="">Home</a></li>
+		<li><a href="PatientRec.aspx" accesskey="2" title="">Patient Record</a></li>
+		<li><a href="Indexing.aspx" accesskey="3" title="">Indexing</a></li>
+		<li><a href="Default.aspx" accesskey="4" title="">Sign Out</a></li>
+	</ul>
+</div>
+</div><hr />
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<!-- end content -->
+	<!-- start sidebar -->
+	<!-- end sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    <asp:ContentPlaceHolder ID="mainmaterpage" runat="server"></asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>

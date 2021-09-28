@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ClientMasterPage.master.cs" Inherits="ClientMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Omics</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <%--<FONT style="position: absolute; top: 29px; left: 158px; width: 974px; height: 60px;" SIZE="6"
+                    FACE="Times new roman" COLOR=black><MARQUEE 
+        BEHAVIOR=SCROLL LOOP=6 scrollamount="14" 
+        style="height: 56px; width: 102%;">www.chennaisunday.com</MARQUEE></FONT>--%>
+        
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    <div>
+        <div id="header">
+<div id="logo">
+	<h1>Identifying molecular biomarkers for diseases machine learning based on integrative omics</a></h1>
+
+</div>
+<div id="menu">
+	<ul>
+		<li class="first"><a href="UserStart.aspx" accesskey="1" title="">Client Home</a></li>
+        <li><a href="ClientSide1.aspx" accesskey="4" title="">Biomolecular & Drug Treatment</a></li>
+		<li><a href="Default.aspx" accesskey="4" title="">Sign Out</a></li>
+	</ul>
+</div>
+</div><hr />
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<!-- end content -->
+	<!-- start sidebar -->
+	<!-- end sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+    </div>
+    </asp:ContentPlaceHolder>
+    
+    <asp:ContentPlaceHolder ID="usermaterpage" runat="server"></asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
